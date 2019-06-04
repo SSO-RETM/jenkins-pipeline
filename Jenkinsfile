@@ -14,8 +14,7 @@ pipeline {
     }
     stage('continue to deploy') {
       steps {
-        waitUntil()
-        input 'continue'
+        input(message: 'continue', ok: 'Yes')
       }
     }
   }
