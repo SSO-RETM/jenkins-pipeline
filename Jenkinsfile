@@ -15,7 +15,7 @@ pipeline {
     stage('continue to deploy') {
       steps {
         input(message: 'continue', ok: 'Yes', parameters: [booleanParam(defaultValue: true, 
-                        description: 'If you like to deploy, just push the button',name: 'Yes?'))
+                        description: 'If you like to deploy, just push the button',name: 'Yes?')])
       }
     }
   }
