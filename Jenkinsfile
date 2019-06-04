@@ -12,5 +12,11 @@ pipeline {
         echo 'Testing..'
       }
     }
+    stage('continue to deploy') {
+      steps {
+        waitUntil()
+        input 'continue'
+      }
+    }
   }
 }
